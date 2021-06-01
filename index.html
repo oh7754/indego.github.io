@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="./jq/jquery-3.6.0.min.js"></script>
+    <script src="./jq/myjq.js"></script>
+    <title></title>
+    <script>
+    function fnMove(seq){
+        var offset = $("#div" + seq).offset();
+        $('html, body').animate({scrollTop : offset.top}, 400);
+    }
+
+</script>
+
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <nav>
+         <ul class="menu">
+              <div>
+                <li><button onclick="fnMove('1')">indigo</button>
+            </li>
+            <li><button onclick="fnMove('2')">video</button></li>
+            <li><button onclick="fnMove('3')">about</button></li>
+            <li><button onclick="fnMove('4')">design</button></li>
+            <li><button onclick="fnMove('5')">contents</button></li>
+         </ul>
+         </nav>
+      </header>
+        <div class="conwrap">
+          <div id="div1" class="con1">
+            <img id="main_img" src="./img/indigo.jpg" alt="">
+          </div>
+
+          <div id="div2" class="con2">
+              <div class="video">
+                <iframe src="https://www.youtube.com/embed/zpqzBNenH9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+          <div id="div3" class="con3">
+            <img id="main_img" src="./img/about1.jpg" alt="">
+            <div class="hover">
+              <div class="hovercon">
+                <div class="ho">
+                  <h1>인디음악 왜 어렵고 힘들까요?</h1>
+                </div>
+              </div>
+              <img id="main_img" src="./img/about2.jpg" alt="">
+            </div>
+            <img id="about3" src="./img/about3.jpg" alt="">
+          </div>
+          <div id="div4" class="con4">
+            <img id="main_img" src="./img/design.jpg" alt="">
+          </div>
+          <div id="div5" class="con5">
+            <div class="over">
+              <img id="main_img" src="./img/pin.gif" alt="">
+              <img id="main_img" src="./img/pin1.gif" alt="">
+              <img id="main_img" src="./img/pin2.gif" alt="">
+              <img id="main_img" src="./img/pin3.gif" alt="">
+            </div>
+
+            <div class="back">
+              <img id="main_img" src="./img/contents.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+    </div>  <!-- wrap -->
+
+
+  </body>
+</html>

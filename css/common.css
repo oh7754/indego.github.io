@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* 반드시 overlay 여야함!! */
+body {
+   overflow: overlay;
+   background-color: #272727;
+ }
+
+::-webkit-scrollbar {
+  width: 35px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #8bdace;
+  border-radius: 100px;
+  width: 35px;
+  height: 35px;
+  background-clip: padding-box;
+  border:10px solid transparent;
+}
+
+::-webkit-scrollbar-button {
+  /* height: 50px; */
+  background-color: none;
+}
+
+.wrap {
+  width: 100%;
+}
+
+header {
+  transition:all 50ms linear;
+  z-index: 999;
+  mix-blend-mode: exclusion;
+  color: #8bdace;
+  font-size: 20px;
+  font-weight: lighter;
+  object-fit: cover;
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  color: #ffffff;
+}
+button {
+transition:all 50ms linear;
+padding:10% 35%;
+  border: none;
+  background-color:#11111100;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: lighter;
+  object-fit: cover;
+    vertical-align: bottom;
+}
+
+button:hover {
+  font-size: 26px;
+  transition-duration:0.1s;
+  font-weight: bold;
+
+}
+
+header:hover button{
+font-weight: bold;
+transition-duration:0.1s;
+  text-align: center;
+}
+
+header li:hover button{
+    color: #8bdace;
+    mix-blend-mode: normal;
+}
+
+
+header li {
+  width: 20%;
+  display: inline-block;
+  float: left;text-align: center;
+  height: 30px;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+button {
+
+}
+
+
+
+
+img {
+  width: 100%;
+}
+.conwrap {
+  width: 100%;
+}
+
+.conwrap div {
+  width: 100%;
+}
+
+
+
+.video { overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+
+  /* background-color: #ff0000; */
+}
+
+
+iframe {
+  left:15%;
+  top:20%;
+  height:70%;
+  width:70%;
+  position:absolute;
+}
+
+#about3 {
+margin-top: 60%;
+}
+
+.con2 {
+  width: 100%;
+  height: 1080px;
+}
+
+.hover {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.hover img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hovercon h1 {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.ho:hover {
+  color: #ffffff00;
+  transition-duration: 0.3s;
+}
+
+.ho{
+  padding: 8% 0;
+  /* background-color: #ff0000; */
+}
+
+.hovercon {
+  transition:all 200ms linear;
+  z-index: 1;
+  width: 100%;
+  vertical-align: middle;
+  padding-top: 23%;
+  padding-bottom: 18%;
+  /* background-color: #111111dd; */
+  color: #ffffff;
+  left: 0;
+  top: 0;
+  text-align: center;
+  position: absolute;
+}
+.con5 {
+position: relative;
+}
+.over {
+  position: absolute;
+  z-index: 1;
+}
+
+.back {
+  position: absolute;
+  top:180px;
+}
